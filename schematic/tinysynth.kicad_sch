@@ -268,7 +268,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_Microchip_ATtiny:ATtiny85-20S"
+		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -281,7 +281,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "ATtiny85-20S"
+			(property "Value" "ATtiny85-20P"
 				(at 2.54 -13.97 0)
 				(effects
 					(font
@@ -290,7 +290,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -309,7 +309,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, SOIC-8"
+			(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -327,7 +327,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*SOIC*5.3x5.3mm*P1.27mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -336,7 +336,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ATtiny85-20S_0_1"
+			(symbol "ATtiny85-20P_0_1"
 				(rectangle
 					(start -12.7 -12.7)
 					(end 12.7 12.7)
@@ -349,7 +349,7 @@
 					)
 				)
 			)
-			(symbol "ATtiny85-20S_1_1"
+			(symbol "ATtiny85-20P_1_1"
 				(pin power_in line
 					(at 0 15.24 270)
 					(length 2.54)
@@ -1004,10 +1004,10 @@
 		(uuid "01156ffd-0920-4c7c-aecc-bf76ec267678")
 	)
 	(junction
-		(at 53.34 59.69)
+		(at 53.34 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "197b0f7a-65cf-4711-be7a-9e23d28788fe")
+		(uuid "14fd669f-971a-446e-ada9-795fafe0790b")
 	)
 	(junction
 		(at 29.21 29.21)
@@ -1070,16 +1070,16 @@
 		(uuid "7e82413e-ae63-4f05-8888-5b67b8c66615")
 	)
 	(junction
-		(at 53.34 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8602d3b8-4af7-437f-9b70-eba2e60d589f")
-	)
-	(junction
 		(at 109.22 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "870c706a-f4e0-4d91-beba-6f0c3d364582")
+	)
+	(junction
+		(at 68.58 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e86c85c-7ed9-481d-90d1-acaffb0c11f7")
 	)
 	(junction
 		(at 78.74 46.99)
@@ -1100,6 +1100,12 @@
 		(uuid "c6b49596-5d36-4f88-8b13-d8a5913fbeeb")
 	)
 	(junction
+		(at 53.34 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d63f4b8a-7200-499c-8d43-be11173b011b")
+	)
+	(junction
 		(at 96.52 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1110,12 +1116,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4742909-72ee-4ad8-9170-8ed930c924e7")
-	)
-	(junction
-		(at 68.58 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa4b9039-ca11-40b9-bfc1-aba608dd3de3")
 	)
 	(no_connect
 		(at 68.58 41.91)
@@ -1173,13 +1173,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 29.21) (xy 68.58 29.21)
+			(xy 53.34 59.69) (xy 68.58 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29206c21-1f3e-43da-9a18-cedac14fb4ba")
+		(uuid "200d8c24-95bd-477e-8089-966f6ac3d0d8")
 	)
 	(wire
 		(pts
@@ -1250,6 +1250,16 @@
 			(type default)
 		)
 		(uuid "5f3d5a8c-d5d5-47ce-842d-ecace2013eec")
+	)
+	(wire
+		(pts
+			(xy 53.34 29.21) (xy 68.58 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61e6f854-bb7e-48d6-8482-89e180a496ac")
 	)
 	(wire
 		(pts
@@ -1390,16 +1400,6 @@
 			(type default)
 		)
 		(uuid "c3b84ec5-b51e-4bb9-9737-05b0517d6cd9")
-	)
-	(wire
-		(pts
-			(xy 68.58 59.69) (xy 53.34 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9da8dfb-d902-43da-8729-91f301f057c2")
 	)
 	(wire
 		(pts
@@ -1897,95 +1897,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_Microchip_ATtiny:ATtiny85-20S")
-		(at 53.34 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "547e5600-868f-40ee-b98e-b8596e72d2e2")
-		(property "Reference" "U1"
-			(at 39.37 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "ATtiny85-20S"
-			(at 39.37 45.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
-			(at 53.34 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf"
-			(at 53.34 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, SOIC-8"
-			(at 53.34 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "818dc3e9-0ae0-4c4c-8b29-292eceb6af76")
-		)
-		(pin "2"
-			(uuid "6462132d-8265-40c6-ae35-ed0f436f7425")
-		)
-		(pin "6"
-			(uuid "472e2ac8-dd4a-445f-b5b8-b4c9bef251d6")
-		)
-		(pin "7"
-			(uuid "edde6589-f09b-407d-bc9c-66c2b0470370")
-		)
-		(pin "8"
-			(uuid "16824532-e1ec-4ffb-b388-5f35c310e4f2")
-		)
-		(pin "1"
-			(uuid "d08589e4-2be3-4ee6-9158-cf2c3baf2e1f")
-		)
-		(pin "5"
-			(uuid "d0fbe617-96c6-42a5-8d6c-ba2669656eb3")
-		)
-		(pin "4"
-			(uuid "461a9f02-06b4-44ec-9c05-c9d4964ef217")
-		)
-		(instances
-			(project ""
-				(path "/a0a3eb91-8f33-4350-8197-5514f4f3c97d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 68.58 33.02 0)
 		(unit 1)
@@ -2414,6 +2325,95 @@
 			(project ""
 				(path "/a0a3eb91-8f33-4350-8197-5514f4f3c97d"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_Microchip_ATtiny:ATtiny85-20P")
+		(at 53.34 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6bf9c91-aaf6-42d4-8579-b236998af258")
+		(property "Reference" "U1"
+			(at 39.37 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ATtiny85-20P"
+			(at 39.37 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+			(at 53.34 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf"
+			(at 53.34 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"
+			(at 53.34 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a54733c0-7f3f-457e-b271-77b0afd91c1b")
+		)
+		(pin "5"
+			(uuid "607b8d98-b662-49f8-9beb-c903fded6027")
+		)
+		(pin "2"
+			(uuid "048a8e48-a836-4f87-8fcb-2643c1825b7f")
+		)
+		(pin "7"
+			(uuid "3c3d016d-a882-47aa-bdc0-051ecea4e076")
+		)
+		(pin "6"
+			(uuid "ea6b7269-b7d4-4a2d-a4fe-81fa888695e5")
+		)
+		(pin "4"
+			(uuid "ef358a75-eeb3-4802-9097-8fe6e3710681")
+		)
+		(pin "8"
+			(uuid "471b9a17-5f50-4c68-b222-6669dcf69367")
+		)
+		(pin "3"
+			(uuid "573d9260-2d5a-4ce3-99a7-20db2ee7bfeb")
+		)
+		(instances
+			(project ""
+				(path "/a0a3eb91-8f33-4350-8197-5514f4f3c97d"
+					(reference "U1")
 					(unit 1)
 				)
 			)
